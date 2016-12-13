@@ -1,5 +1,4 @@
-# ngcbs
-山东农信新一代综合业务系统安装及运行维护
+# ngcbs 山东农信新一代综合业务系统安装及运行维护
 
 
 ***
@@ -53,3 +52,12 @@ LOGSIZE 1024
 ETHERNET eth0
 ```
 ***
+### 需要单独安装的包
+#### Ksh
+为什么要安装KSH，可能为了统一使用~/.profile
+```
+yum install ksh
+or
+rpm -ivh ksh-20120801-33.el6.i686.rpm
+```
+ksh 的执行顺序

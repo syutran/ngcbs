@@ -61,3 +61,9 @@ or
 rpm -ivh ksh-20120801-33.el6.i686.rpm
 ```
 ksh 的执行顺序
+***
+### 文件传输ESBFTS（摸索的）
+NGCBS的文件传输并不使用系统的FTP ，自带的ftp_exe就是proftpd的老版本，由ngcbs用户在启动文件传输时启动，所以不要另外再安装proftpd 这个也不影响系统的vsftpd的运行 使用的端口10200不一样。
+ftp_exe 不执行，需要安装 libpam.so.0 --yum install libpam.so.0
+***
+

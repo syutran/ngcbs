@@ -66,4 +66,15 @@ ksh 的执行顺序
 NGCBS的文件传输并不使用系统的FTP ，自带的ftp_exe就是proftpd的老版本，由ngcbs用户在启动文件传输时启动，所以不要另外再安装proftpd 这个也不影响系统的vsftpd的运行 使用的端口10200不一样。
 ftp_exe 不执行，需要安装 libpam.so.0 --yum install libpam.so.0
 ***
+#### 连线预约报表下载打印问题
+bug: 查询 txmodual failed: MySQL server has gone away
+***
+/etc/sysconfig/i18n
+```
+LANG="zh_CN.GB18030"
+LANGUAGE="zh_CN.GB18030:zh_CN.GB2312:zh_CN"
+SUPPORTED="zh_CN.GB18030:zh_CN:zh:en_US.UTF-8:en_US:en"
+LC_CTYPE="zh_CN.GB18030"
 
+```
+***
